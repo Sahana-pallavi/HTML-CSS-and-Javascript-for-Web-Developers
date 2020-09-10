@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BOX MODEL BEFORE</title>
+<style>
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		margin: 0;
+		padding: 0;
+		background-color: pink;
+	}
+	#context{
+		background-color: green;
+	}
+	#box{
+		background-color: yellow;
+		padding: 10px 10px 10px 10px;
+	border: 20px solid black;
+		margin :40px;
+		width: 300px;
+		height: 250px;
+		margin-top: 50px;
+		overflow: scroll;
+	}
+	h1{
+		margin-bottom: 30px; 
+	}
+</style>
+</head>
+<body>
+<h1>BOX MODEL</h1>
+<div id="box">
+<div id="context">	Content - The content of the box, where text and images appear
+<p>Padding - Clears an area around the content. The padding is transparent</p>
+<div>Border - A border that goes around the padding and content</div>
+<div>Margin - Clears an area outside the border. The margin is transparent</div>
+<div>Padding - Clears an area around the content. The padding is transparent</div>
+<div>Border - A border that goes around the padding and content</div>
+</div>
+</div>
+</body>
+</html>
